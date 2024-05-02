@@ -1,0 +1,254 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #faf9f9;
+  padding: 10px;
+}
+
+nav img {
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.menu-bar {
+  display: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(12, 12, 12);
+}
+
+button i {
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 5px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.lorem {
+  position: relative;
+  height: 800px;
+  width: 100%;
+  background-image: url("heroimg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.c-button {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  padding: 10px 70px;
+  background-image: repeating-linear-gradient(to right, black, rgb(94, 88, 88));
+  color: white;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+.para {
+  padding: 20px;
+  background-color: rgba(100, 98, 98, 0.815);
+  display: flex;
+  height: fit-content;
+  font-family: sans-serif;
+  font-size: 14px;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: solid;
+  font-size: 100%;
+}
+
+.para-child {
+  width: 300px;
+  height: fit-content;
+}
+
+.text {
+  height: fit-content;
+}
+
+.heading {
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+.parent-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(196, 193, 193);
+  margin-top: 20px;
+}
+
+.child-card {
+  width: 300px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+
+.main-card {
+  background-color: rgb(196, 193, 193);
+}
+
+.qwe {
+  text-align: center;
+}
+
+.asd {
+  text-align: end;
+  margin-right: 30px;
+}
+.prg {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+@media (max-width: 760px) {
+  nav {
+    /* flex-direction: column;
+    align-items: center; */
+  }
+  .main-card {
+    background-color: rgb(196, 193, 193);
+    padding: 0;
+    margin: auto;
+  }
+  nav img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  ul {
+    display: none;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .app{
+    display: none;
+  }
+
+  .menu-bar{
+    display: inline;
+  }
+  ul li {
+    margin-right: 0;
+  }
+  button {
+    font-size: 20px;
+    padding: 8px;
+  }
+  .parent-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading h1{
+    padding-left: 250px;
+  }
+  .child-card {
+    margin-top: 20px;
+  }
+  .para {
+    align-items: center;
+    flex-direction: column;
+    /* height:250px; */
+  }
+  .para-child {
+    margin: 5px;
+  }
+  .child-card {
+    align-items: center;
+  }
+  .text {
+    height: 280px;
+  }
+  .heading {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav .app {
+    display: none;
+  }
+  .lorem {
+    height: 500px;
+  }
+  .c-button {
+    padding: 10px 20px;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .para {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+
+
+  }
+  .para-child {
+    width: 90%;
+  }
+  .text {
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .child-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding: 10px 20px;
+  }
+  nav img {
+    align-items: center;
+  }
+}
