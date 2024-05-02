@@ -242,7 +242,7 @@ h3 {
     justify-content: start;
   }
  .heading h1{
-    padding-left: 150px;
+    padding-left: 80px;
     flex-direction: row;
   }
   .child-card {
